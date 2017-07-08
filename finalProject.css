@@ -1,0 +1,85 @@
+body {
+    margin: 10px 30px 50px 80px;
+}
+
+div {
+    background-color: #fff19b;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #ff5b5b;
+    font-weight: 20pt;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    color: #f95f22;
+    font-weight: 19pt;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #26a8ff;
+    font-weight: 18pt;
+    padding: 10px 10px 10px 50px;
+}
+
+canvas {
+    height: 300px;
+    border: 1px solid lightgray;
+    margin-left: 50px;
+}
+
+#redFilter {
+    background-color: crimson;
+    color: #ffffff;
+    font-size: 15px;
+    margin-left: 50px;
+}
+
+#grayscale {
+    background-color: #686b6d;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+#rainbow {
+    background: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet);
+    color: #ffffff;
+    font-size: 15px;
+}
+
+#input {
+    height: 40px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+#filter {
+    font-size: 16pt;
+    color: #26a8ff;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+#reset {
+    margin-right: 24px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+#loadImage {
+    margin-left: 50px;
+}

@@ -1,0 +1,20 @@
+h1 {
+font-family: 'Montserrat', sans-serif;
+font-size: 20pt;
+color: crimson;
+}
+
+canvas {
+    height: 200px;
+    border: 1px solid lightgray;
+}
+
+#createComposite {
+color: white;
+background-color: green;
+}
+
+#clearCanvas {
+color: #3b3b3b;
+background-color: yellow;
+}
