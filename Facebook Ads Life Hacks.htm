@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://lifehacks.appness.com/ -->
+<html prefix="og: http://ogp.me/ns#" class=" -webkit- gr__lifehacks_appness_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Discrepancies in Facebook Ads Stats</title>
+    <meta name="description" content="This free guide breaks down the most common reasons for discrepancies between Facebook analytics and popular mobile tracker statistics.">
+    <meta http-equiv="Cache-Control" content="public">
+    <meta http-equiv="Cache-Control" content="max-age=34700">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="http://lifehacks.appness.com/img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="http://lifehacks.appness.com/img/favicons/apple-touch-icon-60x60.png">
+    <link rel="icon" type="image/png" href="http://lifehacks.appness.com/img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://lifehacks.appness.com/img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="mask-icon" href="http://lifehacks.appness.com/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    
+    <!-- social -->
+    <meta property="fb:app_id" content="1418663518438658">
+    <meta property="og:url" content="http://lifehacks.appness.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Discrepancies in Facebook Ads Stats">
+    <meta property="og:description" content="This free guide breaks down the most common reasons for discrepancies between Facebook analytics and popular mobile tracker statistics.">
+    <meta property="og:image" content="https://s13.postimg.org/m9ofxqn9j/facebook_guide_social.png">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="600">¡¡
+    <meta property="og:image:height" content="215">
+    
+    <style media="" data-href="css/style.css">/* FONTS */
+@import url("http://lifehacks.appness.com/css/../fonts/fonts.css");
+/* END FONTS */
+
+/* RESET CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+ caption, tbody,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* Main */
+
+html {
+  font-family: Muller, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #000;
+}
+
+body {
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.right {
+  text-align: right;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+*::selection {
+  background: #ee4326;
+  color: #fff;
+}
+*::-moz-selection {
+  background: #ee4326;
+  color: #fff;
+}
+
+/* EMAIL */
+
+div.email {
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    font-size: 1rem;
+    padding: 1rem 0;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+}
+
+div.send {
+    background-color: #54A11C;
+}
+
+/* "HEADER" */
+
+header {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 3rem;
+  z-index: 999;
+}
+
+header>div>div {
+  float: left;
+  margin: 1.5rem 0rem 0rem 0rem;
+}
+
+header div.logo img {
+  height: 2rem;
+}
+
+header div.logo img:hover {
+  transform: scale(1.05);
+}
+
+
+/* PIC */
+
+section.pics-slider {
+  position: relative;
+}
+
+section.pics-slider > div.pic {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+}
+
+div.pic {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+  );
+  padding: 8rem 0 3rem 0;
+  color: #fff;
+}
+
+div.pic-gallery div.container > * {
+  color: transparent;
+  border-color: transparent;
+  opacity: 0;
+}
+
+div.pic-gallery div.head1 {
+  background: url("https://s16.postimg.org/p3nlf3aol/fb_guide.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+div.pic-gallery div.head2 {
+  background: url("http://lifehacks.appness.com/css/../img/head_2.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+div.pic-gallery div.head3 {
+  background: url("http://lifehacks.appness.com/css/../img/head_3.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+div.pic .pic__best {
+  border: 3px #fff solid;
+  font-size: 1.6rem;
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+}
+
+div.pic h3 {
+  font-size: 2.5rem;
+  margin: 2rem 0 2rem 0;
+  line-height: 3.2rem;
+  max-width: 700px;
+}
+
+div.pic p {
+  line-height: 2rem;
+}
+
+div.pic a {
+  display: inline-block;
+  border: 3px #fff solid;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: .5rem;
+}
+
+div.pic a:hover,
+footer a:hover {
+  transform: scale(1.05);
+}
+
+div.pic a.fb-share > img {
+  height: 70%;
+  margin: 0 auto;
+  margin-top: 15%;
+}
+
+div.pic a.in-share > img {
+  height: 60%;
+  margin: 0 auto;
+  margin-top: 20%;
+}
+
+div.pic a.mail-share > img {
+  height: 50%;
+  margin: 0 auto;
+  margin-top: 25%;
+}
+
+
+/* CONTENT */
+
+section.main {
+  padding-top: 1rem;
+}
+
+div.content {
+  width: 52%;
+  margin-right: 8%;
+  float: left;
+  margin-bottom: 8rem;
+}
+
+div.content p {
+  font-size: .9rem;
+  margin-top: 1rem;
+}
+
+div.content ul {
+  margin-top: 1rem;
+}
+
+div.content li {
+  font-size: .9rem;
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-left: 1rem;
+  margin-bottom: .5rem;
+}
+
+
+/* FORM */
+
+div.form {
+  float: left;
+  width: 33%;
+  background-color: #ebebeb;
+  position: relative;
+  z-index: 11;
+  bottom: 4rem;
+  padding: 4rem 3% 4% 3%;
+}
+
+div.form__preview {
+  width: 86%;
+  max-height: 11rem;
+  padding-top: 1rem;
+  overflow: hidden;
+  position: absolute;
+  top: -8rem;
+  text-align: center;
+  background: url("http://lifehacks.appness.com/css/../img/form-shadow.png") no-repeat 50% 100%;
+  background-size: 100% 4rem;
+}
+
+div.form > div.bot {
+  width: 86%;
+  height: 4px;
+  background: url("http://lifehacks.appness.com/css/../img/form-shadow-bot.png") no-repeat 50% 50%;
+  position: absolute;
+  top: 4rem;
+}
+
+div.form__preview > img {
+  transform: rotate(15deg);
+  position: relative;
+  top: 3rem;
+  width: 60%;
+  max-width: 400px;
+  transition: all 1s ease 0s;
+  -webkit-box-shadow: 0px -3px 10px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px -3px 10px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px -3px 10px 0px rgba(0,0,0,0.1);
+}
+
+div.form__preview > img:hover {
+  top: 2rem;
+}
+
+div.form-shadow {
+  width: 39%;
+  float: right;
+  height: 50px;
+  position: relative;
+  bottom: 4rem;
+  background: url("http://lifehacks.appness.com/css/../img/form-shadow.jpg") no-repeat 50% 50%;
+  background-size: 100% 50px;
+}
+
+div.form h3 {
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  line-height: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding-top: 1rem;
+}
+
+div.form h3>font {
+  color: #ee4326;
+  font-weight: 700;
+}
+
+div.form p > a {
+  color: #000;
+  text-decoration: underline;
+}
+
+div.form form {
+  width: 100%;
+  max-width: 670px;
+  margin: 0 auto;
+}
+
+div.form div.table-form {
+  width: 100%;
+}
+
+div.form div.table-form>div.row {
+  width: 100%;
+  position: relative;
+}
+
+div.form div.table-form>div.row>input {
+  width: 100%;
+  background-color: #fff;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0;
+  padding-left: 0.3rem;
+  box-sizing: border-box;
+  border: 0 transparent solid;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  font-family: Muller;
+}
+
+div.form div.table-form>div.row::before {
+  content:"*";
+  position: absolute;
+  display: block;
+  right: 3px;
+  z-index: 99;
+  color: #E53413;
+}
+
+div.form div.table-form>div.row.notreq::before {
+  content: "";
+  display: none;
+}
+
+div.form div.table-form>div.row>input::-webkit-input-placeholder {text-overflow: ellipsis; color: #aaaaaa;}
+div.form div.table-form>div.row>input::-moz-placeholder          {text-overflow: ellipsis; color: #aaaaaa;} 
+div.form div.table-form>div.row>input:-moz-placeholder           {text-overflow: ellipsis; color: #aaaaaa;} 
+div.form div.table-form>div.row>input:-ms-input-placeholder      {text-overflow: ellipsis; color: #aaaaaa;}
+
+div.form div.table-form>div.row>input:focus::-webkit-input-placeholder {color: transparent;}
+div.form div.table-form>div.row>input:focus::-moz-placeholder          {color: transparent;} 
+div.form div.table-form>div.row>input:focus:-moz-placeholder           {color: transparent;} 
+div.form div.table-form>div.row>input:focus:-ms-input-placeholder      {color: transparent;}
+
+/* Industry */
+
+.custom-dropdown__select{
+    font-size: 1rem;
+    height: 1.5rem;
+    margin: 0; /* remove default margins */
+    width: 100%;
+    padding-left: 0.3rem;
+    color: #D1D1D1;
+    font-weight: 400;
+    font-family: Muller;
+}
+
+.custom-dropdown__select--white {
+    background-color: white;
+}
+
+@supports (pointer-events: none) and
+      ((-webkit-appearance: none) or
+      (-moz-appearance: none) or
+      (appearance: none)) {
+
+    .custom-dropdown {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        margin-bottom: 0.5rem;
+        line-height: 1.5rem;
+    }
+
+    .custom-dropdown__select {
+        padding-right: 2.5em; /* accommodate with the pseudo elements for the dropdown arrow */
+        border: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        box-shadow: 0 0 0 0 transparent !important;
+    }
+
+    .custom-dropdown::before,
+    .custom-dropdown::after {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .custom-dropdown::after { /*  Custom dropdown arrow */
+        content: "\25BC";
+        height: 1rem;
+        font-size: .625em;
+        line-height: 1;
+        right: 1.2em;
+        top: 50%;
+        margin-top: -.5em;
+    }
+
+    .before1.custom-dropdown::before {
+        content: "Your Type of Business";
+        line-height: 1.5rem;
+        position: absolute;
+        left: .3rem;
+        height: 1.5rem;
+        color: #D1D1D1;
+        width: 95%;
+    }
+
+    .before2.custom-dropdown::before {
+        content: "Do you have a Mobile App?";
+        line-height: 1.5rem;
+        position: absolute;
+        left: .3rem;
+        height: 1.5rem;
+        color: #D1D1D1;
+        width: 95%;
+    }
+
+    .custom-dropdown__select[disabled] {
+        color: rgba(0,0,0,.3);
+    }
+
+    .custom-dropdown.custom-dropdown--disabled::after {
+        color: rgba(0,0,0,.1);
+    }
+
+    /* white dropdown style */
+    .custom-dropdown--white::before {
+        background-color: white;
+    }
+
+    .custom-dropdown--white::after {
+        color: #ebebeb;
+    }
+
+    /* FF only temp fix */
+    @-moz-document url-prefix() {
+        .custom-dropdown__select             { padding-right: .9em }
+        .custom-dropdown--large .custom-dropdown__select { padding-right: 1.3em }
+        .custom-dropdown--small .custom-dropdown__select { padding-right: .5em }
+    }
+}
+
+.form__other {
+  display: none;
+}
+
+/* Free Download a.button */
+
+div.form a.button {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #ee4326;
+  border: 0;
+  width: 100%;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  margin-top: 0.5rem;
+}
+
+div.form a.button:hover {
+  background-color: #ec6d58;
+}
+
+div.form a.button + p {
+  text-align: center;
+  color: #959595;
+  font-size: 0.6rem;
+  margin: 0.5rem 0 1rem 0;
+}
+
+div.form a.button + p > a {
+  white-space: nowrap;
+}
+
+/* Sign In a.button */
+
+div.form div.table-in {
+  display: table;
+  width: 100%;
+  background-color: #5068b2;
+  padding: 4px 0;
+}
+
+div.form div.table-in:hover {
+  background-color: #7182c2;
+}
+
+div.form div.table-in>a.row {
+  display: table-row;
+  width: 100%;
+  text-align: center;
+}
+
+div.form div.table-in>a.row>div {
+  display: table-cell;
+  vertical-align: middle;
+  height: 0.8rem;
+  font-size: 0.7rem;
+}
+
+div.form div.table-in>a.row>div:first-child {
+  display: table-cell;
+  width: 20%;
+  border-right: 1px #fff solid;
+}
+
+div.form div.table-in>a.row>div:last-child {
+  width: 80%;
+  padding-left: 1rem;
+}
+
+div.form div.table-in>a.row>div img {
+  height: 90%;
+  margin-top: 5%;
+}
+
+
+/* Footer */
+
+.footer-wrap {
+  background-color: #242424;
+  clear: both;
+}
+footer {
+  padding: 40px 0;
+}
+.footer-wrap footer > .row {
+  display: table-row;
+}
+.footer-wrap footer > .row > div {
+  display: table-cell;
+  width: 25%;
+}
+.footer-wrap footer a {
+  font-size: .8rem;
+  font-weight: 400;
+  line-height: 40px;
+  display: block;
+  width: 159px;
+  height: 40px;
+}
+.footer-wrap footer .adress {
+  color: #fff;
+  margin-top: 60px;
+  padding: 10px 40px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-wrap footer .adress h4 {
+  font-size: 1rem;
+  line-height: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.footer-wrap footer .adress p,
+.footer-wrap footer .adress a {
+  font-size: .7rem;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+
+/* MediaQ */
+
+@media (max-width: 1600px) {
+  html {
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  html {
+      font-size: 16px;
+  }
+
+}
+
+@media (max-width: 900px) {
+  html {
+      font-size: 16px;
+  }
+
+  div.content {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  div.form {
+    float: none;
+    width: 94%;
+    
+    bottom: 0;
+    padding: 5rem 3% 2% 3%;
+  }
+
+  div.form-shadow {
+    float: none;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 3rem;
+  }
+
+  .footer-wrap footer > .row {
+    display: block;
+    width: 100%;
+  }
+
+  .footer-wrap footer > .row > div {
+    display: table-row;
+    width: 100%;
+  }
+
+  .footer-wrap footer a {
+    font-size: 1rem;
+  }
+
+  .footer-wrap footer > .row > div > div {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+    padding-bottom: 20px;
+  }
+
+  .footer-wrap footer > .row > div > div:last-child {
+    padding-left: 40px;
+  }
+
+  .footer-wrap footer > .row > div.adress {
+    display: table-cell;
+  }
+
+  .footer-wrap footer > .row > div.adress p,
+  .footer-wrap footer > .row > div.adress a {
+    font-size: .8rem;
+  }
+
+  .footer-wrap footer > .row > div:nth-child(2) {
+    border: 0;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+      font-size: 14px;
+  }
+
+  div.form div.table-form > div.row > input,
+  .custom-dropdown,
+  .custom-dropdown__select {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    height: 2rem;
+  }
+
+  div.form a.button + p {
+    font-size: .8rem;
+  }
+
+  div.form div.table-in>a.row>div {
+    height: 1rem;
+    font-size: .9rem;
+  }
+
+  div.content p {
+    font-size: 1.2rem;
+  }
+
+  div.content li {
+    font-size: 1.2rem;
+  }
+
+
+  .custom-dropdown::before {
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
+    height: 2rem !important;
+  }
+
+
+  .footer-wrap footer > .row {
+    display: block;
+    width: 100%;
+  }
+
+  .footer-wrap footer a {
+    font-size: 1rem;
+  }
+
+  .footer-wrap footer > .row > div > div {
+    display: block;
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+    padding-bottom: 20px;
+  }
+
+  .footer-wrap footer > .row > div > div:last-child {
+    padding-left: 40px;
+  }
+
+  .footer-wrap footer > .row > div.adress {
+    display: block;
+  }
+
+  .footer-wrap footer > .row > div.adress::before {
+    display: block;
+    content: "";
+    width: 30%;
+    height: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .footer-wrap footer > .row > div.adress p,
+  .footer-wrap footer > .row > div.adress a {
+    font-size: 1rem;
+  }
+
+  .footer-wrap footer .adress h4 {
+    font-size: 1.3rem;
+  }
+
+  .footer-wrap footer > .row > div {
+    border: 0;
+    padding-left: 0;
+  }
+
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 12px;
+  }
+
+  div.content p {
+    font-size: 1.5rem;
+  }
+
+  div.content ul {
+    margin-top: 1.5rem;
+  }
+
+  .footer-wrap footer > .row {
+    display: block;
+    width: 100%;
+  }
+
+  .footer-wrap footer > .row > div {
+    display: table-row;
+    width: 100%;
+  }
+
+  .footer-wrap footer a {
+    font-size: 1.2rem;
+  }
+
+  .footer-wrap footer > .row > div > div {
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .footer-wrap footer > .row > div > div:last-child {
+    padding-left: 0px;
+  }
+
+  .footer-wrap footer .adress {
+    padding: 0;
+    margin-top: 40px;
+  }
+
+}</style>
+    <style media="" data-href="css/slick.css">/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 30px;
+    line-height: 30px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 30px;
+    height: 30px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .65;
+    color: gray;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .95;
+    color: white;
+}</style>
+    
+    <script async="" src="./Facebook Ads Life Hacks_files/analytics.js"></script><script src="./Facebook Ads Life Hacks_files/1345467925464258" async=""></script><script async="" src="./Facebook Ads Life Hacks_files/fbevents.js"></script><script type="text/javascript" src="./Facebook Ads Life Hacks_files/pd.js"></script><script id="facebook-jssdk" src="./Facebook Ads Life Hacks_files/sdk.js"></script><script async="" src="./Facebook Ads Life Hacks_files/gtm.js"></script><script src="./Facebook Ads Life Hacks_files/jquery.min.js"></script>
+    <script src="./Facebook Ads Life Hacks_files/prefixfree.min.js"></script>
+<style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style><script type="text/javascript" src="./Facebook Ads Life Hacks_files/analytics"></script><script type="text/javascript" src="./Facebook Ads Life Hacks_files/analytics(1)"></script></head>
+<body data-gr-c-s-loaded="true">
+
+    <!-- Google Tag Manager -->
+    <noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-PZ8MTL"
+                      height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-PZ8MTL');</script>
+    <!-- End Google Tag Manager -->
+
+    <script>
+      // Load the SDK asynchronously
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="https://appness.com/" target="_blank" title="Go to Appness.com">
+                    <img class="logo-desktop" src="./Facebook Ads Life Hacks_files/logo-white.png" alt="appness logo">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="pics-slider">
+        <div class="pic">
+            <div class="container">
+                <span class="pic__best">Free Guide</span>
+                <h3>Track Your Facebook Ads Performance More Accurately</h3>
+                <p>Share this:</p>
+                <a class="fb-share" href="https://www.facebook.com/dialog/share?app_id=145634995501895&amp;display=popup&amp;href=http%3A%2F%2Flifehacks.appness.com" title="Share on Facebook" target="_blank"><img src="./Facebook Ads Life Hacks_files/facebook.svg" alt="facebook"></a><!--
+                --><a class="in-share" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Flifehacks.appness.com&amp;title=Facebook%20Ads%20Life%20Hacks&amp;summary=This%20free%20guide%20will%20show%20you%20the%2015%20most%20useful%20tips%20and%20tricks%20to%20make%20your%20Facebook%20ads%20work%20for%20your%20app&amp;source=https%3A%2F%2Fappness.com" target="_blank" title="Share on LinkedIn"><img src="./Facebook Ads Life Hacks_files/linkedin.svg" alt="linkedin"></a><!--
+                --><a class="mail-share" href="mailto:?subject=Facebook%20Ads%20Life%20Hacks&amp;body=This%20free%20guide%20will%20show%20you%20the%2015%20most%20useful%20tips%20and%20tricks%20to%20make%20your%20Facebook%20ads%20work%20for%20your%20app:%20http%3A%2F%2Flifehacks.appness.com" target="_blank" title="Send email"><img src="./Facebook Ads Life Hacks_files/mail.svg" alt="mail"></a>
+            </div>
+        </div>
+        <div class="slider pic-gallery">
+            <div class="pic head1">
+                <div class="container">
+                    <span class="pic__best">Free Guide</span>
+                    <h3>Track Your Facebook Ads Performance More Accurately</h3>
+                    <p>Share this:</p>
+                    <a class="fb-share"><img src="./Facebook Ads Life Hacks_files/facebook.svg" alt="facebook"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main" id="reg">
+        <div class="container">
+            
+            <div class="content">
+                <p>If you are using third-party reporting tools for tracking Facebook ads performance for your app, you might have encountered some discrepancies between Facebook stats and mobile tracker analytics.</p>
+
+                <p>Figuring out the reason and obtaining objective data might be a daunting task.</p>
+                <p>This essential guide will help you spot <strong>the most common reasons</strong> for discrepancies in stats and show you how to:</p>
+
+                <ul>
+                    <li><strong>track conversions</strong> more accurately;</li>
+                    <li>set up the correct <strong>attribution models</strong> to gather performance data;</li>
+                    <li>tweak your <strong>Facebook attribution settings</strong> for best results.</li>
+                </ul>
+                <p><strong>Bonus tip:</strong> learn how we decreased the conversion cost by 20% for one of our ads.</p>
+            </div>
+
+
+            <div class="form">
+
+                <div class="form__preview">
+                    <img src="https://s13.postimg.org/ombbv6uev/free_guide.png" alt="Preview">
+                </div>
+
+                <div class="bot"></div>
+                
+                <h3>Register to download the guide</h3>
+
+                <form onsubmit="return false;" method="post" id="reg" action="http://go.appness.com/l/348461/2017-05-30/njs">
+
+                    <div class="table-form">
+                        <div class="row">
+                            <input required="" id="fname" name="fname" type="text" placeholder="First Name" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                        </div>
+
+                        <div class="row">
+                            <input required="" id="lname" name="lname" type="text" placeholder="Last Name">
+                        </div>
+
+                        <div class="row">
+                            <input required="" id="company" name="company" type="text" placeholder="Company Name">
+                        </div>
+
+                        <div class="row">
+                            <input required="" id="email" name="email" type="mail" placeholder="Email">
+                        </div>
+
+                        <div class="row">
+                            <span class="before1 custom-dropdown custom-dropdown--white">
+                                <select class="custom-dropdown__select custom-dropdown__select--white" required="" id="industry" name="industry">
+                                    <option value="Agency">Agency</option>
+                                    <option value="Media Buyer">Media Buyer</option>
+                                    <option value="Advertiser">Advertiser</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </span>
+                        </div>
+
+                        <div class="row">
+                            <span class="before2 custom-dropdown custom-dropdown--white">
+                                <select class="custom-dropdown__select custom-dropdown__select--white" required="" id="app" name="app">
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <a class="button" href="javascript:void(0)" target="_blank">Free Download</a>
+
+                    <p>By clicking this button, you agree to our <a href="https://appness.com/legal/" target="_blank">Terms and Conditions</a>.</p>
+
+                    <div class="table-in">
+                        <a class="row" href="http://lifehacks.appness.com/" id="fblogin">
+                            <div>
+                                <img src="./Facebook Ads Life Hacks_files/facebook.svg" alt="Register with Facebook">
+                            </div>
+                            <div>
+                                <p>Sign in with Facebook</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="form-shadow"></div>
+
+        </div>
+    </section>
+
+<section class="footer-wrap">
+    <footer class="container">
+        <div class="row">
+            <div class="links">
+                <div class="">
+                    <a href="https://appness.com/" title="Go to Appness Site">
+                        <img src="./Facebook Ads Life Hacks_files/logo-white.png" alt="Appness logo" height="40" width="159">
+                    </a>
+                </div>
+                <div class="">
+                    <a href="https://appness.com/legal/" target="_blank">Terms&nbsp;and&nbsp;Conditions</a>
+                </div>
+            </div>
+            <div class="adress">
+                <h4>NICOSIA</h4>
+                <p>Stavrou, 56. Flat/Office 104
+                    <br>Strovolos, 2035
+                    <br>Cyprus</p>
+            </div>
+            <div class="adress">
+                <h4>CONTACT:</h4>
+                <p><a href="mailto:welcome@appness.com">welcome@appness.com</a></p>
+
+                <table cellpadding="0" cellspacing="0" border="0" width="200px">
+                    <tbody><tr>
+                        <td style="height:50px;" align="left" valign="middle">
+                            <a target="_blank" href="https://www.facebook.com/appness/" style="display:block; width:38px;height:38px;text-decoration:none;">
+                                <img border="0" width="38px" height="38px" style="display: block;" src="./Facebook Ads Life Hacks_files/email-btn-fb.png" alt="fb">
+                            </a>
+                        </td>
+                        <td width="10px">&nbsp;</td>
+                        <td style="height:50px;" align="left" valign="middle">
+                            <a target="_blank" href="https://www.linkedin.com/company-beta/10816807/" style="display:block; width:38px;height:38px;text-decoration:none;">
+                                <img border="0" width="38px" height="38px" style="display: block;" src="./Facebook Ads Life Hacks_files/email-btn-in.png" alt="in">
+                            </a>
+                        </td>
+                        <td width="10px">&nbsp;</td>
+                        <td style="height:50px;" align="left" valign="middle">
+                            <a target="_blank" href="https://appness.com/" style="display:block;width:38px;height:38px;text-decoration:none;">
+                                <img border="0" width="38px" height="38px" style="display: block;" src="./Facebook Ads Life Hacks_files/email-btn-link.png" alt="link">
+                            </a>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </div>
+    </footer>
+</section>
+
+<script src="./Facebook Ads Life Hacks_files/scripts.js"></script>
+
+<script type="text/javascript">
+piAId = '349461';
+piCId = '1961';
+
+(function() {
+    function async_load(){
+        var s = document.createElement('script'); s.type = 'text/javascript';
+        s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+        var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+    }
+    if(window.attachEvent) { window.attachEvent('onload', async_load); }
+    else { window.addEventListener('load', async_load, false); }
+})();
+</script>
+
+
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Facebook Ads Life Hacks_files/XBwzv5Yrm_1.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Facebook Ads Life Hacks_files/XBwzv5Yrm_1(1).html" style="border: none;"></iframe></div></div></div>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1345467925464258");fbq("track","PageView");</script>
+
+<script type="text/javascript" id="">(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b;a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};a[b].l=1*new Date;c=e.createElement(f);d=e.getElementsByTagName(f)[0];c.async=1;c.src=g;d.parentNode.insertBefore(c,d)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create","UA-77064218-1","auto");ga("send","pageview");</script></body></html>
